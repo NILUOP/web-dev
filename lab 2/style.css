@@ -1,0 +1,110 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+h3
+{
+    display: inline-flex;
+    background-color: darkblue;
+    color: aliceblue;
+    padding: 5px;
+}
+
+header
+{
+    position: sticky;
+    top: 0px;
+}
+
+nav
+{
+    position: sticky;
+
+    padding: 15px;
+    width: 100vw;
+    top: 0px;
+    box-sizing: border-box;
+
+    /* display: inline-flex; */
+    background-color: darkblue;
+    color: aliceblue;
+
+    display: flex;              /*Use flex for layout*/
+    justify-content: space-between;  /*Distribute space between h3 and ul*/
+    align-items: center;
+}
+
+nav ul {
+    display: flex;             /* Make ul a flex container */
+    gap: 30px;                 /* Add spacing between list items */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li
+{
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+    list-style: none;
+    list-style-position: inside;
+    display: inline-flex;
+}
+
+a:link
+{
+    color: rgb(255, 255, 255);
+}
+
+a:visited
+{
+    color: rgb(255, 255, 255);
+}
+
+a:hover
+{
+    color: deepskyblue;
+}
+
+.contact:link
+{
+    color: blue;
+}
+.contact:visited
+{
+    color: blue;
+}
+.contact:hover
+{
+    color: rgb(30, 255, 0);
+}
+
+/* Make the body take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Wrapper holds the layout */
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content expands to fill available space */
+main {
+    flex: 1;
+}
+
+/* Footer stays at the bottom */
+footer {
+    position: sticky;
+    bottom: 0px;
+    background: darkblue;
+    color: white;
+    padding: 10px;
+}
