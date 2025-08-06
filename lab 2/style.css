@@ -2,6 +2,7 @@
 {
     margin: 0px;
     padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h3
@@ -10,6 +11,7 @@ h3
     background-color: darkblue;
     color: aliceblue;
     padding: 5px;
+    font-weight: 900;
 }
 
 header
@@ -88,6 +90,13 @@ html, body {
     margin: 0;
 }
 
+p
+{
+    font-size: 20px;
+    text-indent: 20vw;
+    font-style: italic;
+}
+
 /* Wrapper holds the layout */
 .wrapper {
     min-height: 100%;
@@ -98,6 +107,7 @@ html, body {
 /* Main content expands to fill available space */
 main {
     flex: 1;
+    background-color: rgba(255, 232, 198, 0.67);
 }
 
 /* Footer stays at the bottom */
@@ -107,4 +117,22 @@ footer {
     background: darkblue;
     color: white;
     padding: 10px;
+}
+
+table
+{   margin: 10px;
+    border-collapse: collapse;
+}
+
+td
+{
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.interest
+{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.2em;
 }
