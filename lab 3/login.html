@@ -19,8 +19,13 @@
                         <li><a href="interest.html">Interest</a></li>
                         <li><a href="skill.html">Skill</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="login.html">Login</a></li>
+                        <!-- <li><a href="login.html">Login</a></li> -->
+                        <li id="loginLink"><a href="login.html">Login</a></li>
+                        <li id="logoutLink" style="display:none;"><a href="#" onclick="logout()">Logout</a></li>
+
                     </ul>
+
+
             </nav>
         </header>
 
@@ -28,20 +33,24 @@
             <h2>LogIn</h2>
 
             <div class="box">
-                <form action="post">
+                <form id="loginForm">
                     <div class="username">
-                        <label for="username">username : </label>
-                        <input type="text" id="username" name="username" placeholder="enter your username">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username" required>
                     </div>
                     <div class="password">
-                        <label for="password">password : </label>
-                        <input type="password" name="password" id="password" placeholder="enter your password">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
                     </div>
                     <div class="submit">
-                        <a href="index.html"><button>Submit</button></a>
+                        <button type="submit">Submit</button>
                     </div>
                 </form>
+
             </div>
+
+            <script src="script.js"></script>
+
         </main>
 
         <footer>
