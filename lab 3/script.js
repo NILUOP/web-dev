@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Demo credentials
             if (username === "admin" && password === "123") {
                 sessionStorage.setItem("isLoggedIn", "true");
-                window.location.href = "index.html";
+                window.location.href = "review.html";
             } else {
                 alert("Invalid credentials!");
             }
