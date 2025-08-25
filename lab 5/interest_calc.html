@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interest calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="m_table">
+        <select name="calc" id="calc" onchange="select_calc()">
+            <option value="select" selected>select</option>
+            <option value="simple calculator">simple calculator</option>
+            <option value="compound calculator">compound calculator</option>
+        </select>
+
+        <div id="simple_calc" onchange="simple_calc()">
+            <div class="io">
+                <label for="ps">Principle Amount</label>
+                <input type="number" id="ps">
+            </div>
+            <div class="io">
+                <label for="rs">Rate</label>
+
+                0<input type="range" id="rs" min="0" max="30" step="0.1" onchange="show_rate()">30
+                <div id="rates"></div>
+            </div>
+            <div class="io">
+                <label for="ts">Time (in years)</label>
+                <input type="number" id="ts">
+            </div>
+
+            <div class="io" id="results"></div>
+        </div>
+
+        <div id="compound_calc" onchange="compound_calc()">
+            <div class="io">
+                <label for="pc">Principle Amount</label>
+                <input type="number" id="pc">
+            </div>
+            <div class="io">
+                <label for="rc">Rate</label>
+
+                0<input type="range" id="rc" min="0" max="30" step="0.1" onchange="show_rate()">30
+                <div id="ratec"></div>
+            </div>
+            <div class="io">
+                <label for="tc">Time (in years)</label>
+                <input type="number" id="tc">
+            </div>
+
+            <div class="io">
+                <label for="no_of_times">no of times interest compounded</label>
+                <select name="no_of_times" id="no_of_times">
+                    <option value="annualy">annualy</option>
+                    <option value="quaterly">quaterly</option>
+                    <option value="monthly">monthly</option>
+                    <option value="weekly">weekly</option>
+                    <option value="daily">daily</option>
+                </select>
+            </div>
+
+            <div class="io" id="resultc"></div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+
+</body>
+
+</html>

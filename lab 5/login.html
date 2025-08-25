@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Nisarg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <h3 class="nisarg"><a href="index.html">NISARG</a></h1>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="interest.html">Interest</a></li>
+                        <li><a href="skill.html">Skill</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="tools.html">tools</a></li>
+                        <!-- <li><a href="login.html">Login</a></li> -->
+                        <li id="loginLink"><a href="login.html">Login</a></li>
+                        <li id="logoutLink" style="display:none;"><a href="#" onclick="logout()">Logout</a></li>
+
+                    </ul>
+
+
+            </nav>
+        </header>
+
+        <main>
+            <h2>LogIn</h2>
+
+            <div class="box">
+                <form id="loginForm">
+                    <div class="io">
+                        <label for="name">name : </label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="io">
+                        <label for="email">email : </label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="io">
+                        <label for="number">number : </label>
+                        <input type="number" id="number" placeholder="Enter your mobile number">
+                    </div>
+
+                    <div class="io">
+                        <label for="dob">Date of Birth : </label>
+                        <input type="date" id="dob">
+                    </div>
+                    
+                    <div class="io">
+                        <label for="male">male</label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="female">female</label>
+                        <input type="radio" name="gender" id="female">
+                    </div>
+
+                    <div class="io">
+                        <div>
+                            <label for="">Languages that you know</label>
+                        </div>
+                        <label for="python">Python</label>
+                        <input type="checkbox" name="lang" id="python">
+                        <label for="cpp">C++</label>
+                        <input type="checkbox" name="lang" id="cpp">
+                        <label for="java">Java</label>
+                        <input type="checkbox" name="lang" id="java">
+                        <label for="js">JavaScript</label>
+                        <input type="checkbox" name="lang" id="js">
+                    </div>
+
+                    <div class="io">
+                        <label for="photo">Upload Your Photo</label>
+                        <input type="file" name="photo">
+                    </div>
+                    
+                    <div class="io">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    </div>
+                    
+                    <div class="io">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="io">
+                        <label for="password">Confirm Password:</label>
+                        <input type="password" id="password" name="password" placeholder="confirm your password" required>
+                    </div>
+                    
+                    <div class="io">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <script src="script.js"></script>
+
+        </main>
+
+        <footer>
+            Developed by Nisarg | CSE Department | PDEU
+        </footer>
+    </div>
+</body>
+
+</html>

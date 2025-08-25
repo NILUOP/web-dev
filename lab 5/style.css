@@ -1,0 +1,200 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3
+{
+    display: inline-flex;
+    background-color: darkblue;
+    color: aliceblue;
+    padding: 7px;
+    font-weight: 900;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+header
+{
+    position: sticky;
+    top: 0px;
+}
+
+nav
+{
+    position: sticky;
+
+    padding: 15px;
+    width: 100vw;
+    top: 0px;
+    box-sizing: border-box;
+
+    /* display: inline-flex; */
+    background-color: darkblue;
+    color: aliceblue;
+
+    display: flex;              /*Use flex for layout*/
+    justify-content: space-between;  /*Distribute space between h3 and ul*/
+    align-items: center;
+}
+
+nav ul {
+    display: flex;             /* Make ul a flex container */
+    gap: 30px;                 /* Add spacing between list items */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li
+{
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+    list-style: none;
+    list-style-position: inside;
+    display: inline-flex;
+}
+nav ul li:hover
+{
+    background-color: yellow;
+    a
+    {
+        color: blue;
+    }
+}
+
+
+
+a:link
+{
+    color: rgb(255, 255, 255);
+}
+
+a:visited
+{
+    color: rgb(255, 255, 255);
+}
+
+a:hover
+{
+    color: rgb(38, 0, 255);
+}
+
+.contact:link
+{
+    color: blue;
+}
+.contact:visited
+{
+    color: blue;
+}
+.contact:hover
+{
+    color: rgb(30, 255, 0);
+}
+
+.nisarg:hover
+{
+    background-color: yellow;
+}
+
+/* Make the body take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+p
+{
+    font-size: 20px;
+    text-indent: 20vw;
+    font-style: italic;
+}
+
+/* Wrapper holds the layout */
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content expands to fill available space */
+main {
+    flex: 1;
+    background-color: rgba(255, 198, 198, 0.67);
+}
+
+/* Footer stays at the bottom */
+footer {
+    position: sticky;
+    bottom: 0px;
+    background: darkblue;
+    color: white;
+    padding: 10px;
+}
+
+table
+{   margin: 10px;
+    border-collapse: collapse;
+}
+
+td
+{
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.interest
+{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+form
+{
+    position: relative;
+    top: 20vh;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    /* height: 150px; */
+    width: 400px;
+    border: 2px solid rgb(255, 112, 112);
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px rgb(255, 148, 148);
+}
+
+.m_table
+{
+    position: relative;
+    top: 20vh;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    /* height: 150px; */
+    width: 400px;
+    border: 2px solid rgb(255, 112, 112);
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px rgb(255, 148, 148);
+}
+
+#m_table
+{
+    list-style: none;
+}
+
+.io
+{
+    padding: 4px;
+}
+
+#simple_calc, #compound_calc
+{
+    display: none;
+}
