@@ -2,11 +2,16 @@ function get_table()
 {
     let n = document.getElementById("n_for_table").value;
 
-    document.getElementById("m_table").innerHTML = `<li></li>`;
+    console.log(n);
 
-    for (let i = 1; i < 11; i++)
-    {
-        document.getElementById("m_table").innerHTML += `<li>${n} * ${i} = ${n * i}</li>`;
+    if(n)
+    {        
+        document.getElementById("m_table").innerHTML = `<li></li>`;
+            
+        for (let i = 1; i < 11; i++)
+        {
+            document.getElementById("m_table").innerHTML += `<li>${n} * ${i} = ${n * i}</li>`;
+        }
     }
 }
 
@@ -26,13 +31,11 @@ function select_calc()
     {
         compound.style.display = "none";
         simple.style.display = "block";
-        // simple_calc();
     }
     else if(n === "compound calculator")
     {
         simple.style.display = "none";
         compound.style.display = "block";
-        // compound_calc();
     }
 }
 
@@ -48,7 +51,6 @@ function simple_calc()
 
 function compound_calc()
 {
-    // P(1 + r/n)^(nt)
     let p = document.getElementById("pc").value;
     let r = document.getElementById("rc").value;
     let t = document.getElementById("tc").value;
